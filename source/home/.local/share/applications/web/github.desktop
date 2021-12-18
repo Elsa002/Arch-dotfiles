@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=GitHub
+GenericName=github
+Comment=github in firefox
+Keywords=git;github;
+Exec=firefox www.github.com
+Icon=github
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Categories=Network;Development;

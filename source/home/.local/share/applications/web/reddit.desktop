@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=Reddit
+GenericName=reddit
+Comment=reddit in firefox
+Keywords=reddit;
+Exec=firefox www.reddit.com
+Icon=reddit
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+StartupWMClass=reddit
+Categories=Network;Reddit;

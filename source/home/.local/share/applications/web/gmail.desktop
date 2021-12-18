@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=Gmail
+GenericName=gmail
+Comment=Gmail in firefox
+Keywords=google;mail
+Exec=firefox https://mail.google.com/
+Icon=gmail
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Categories=Network;Office;

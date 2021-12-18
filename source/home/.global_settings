@@ -1,0 +1,26 @@
+# Themes
+#export GTK_THEME=Adwaita:dark
+export GTK_THEME=Breeze-Dark
+export QT_QPA_PLATFORMTHEME=qt5ct
+
+# Bar settings
+export TOP_BAR_HEIGHT=96
+export BAR_FONT_SIZE=32
+export BAR_FONT_0="DejavuSansMono:size=${BAR_FONT_SIZE};2"
+export BAR_FONT_1="fontawesome-regular:size=${BAR_FONT_SIZE};2"
+export BAR_FONT_2="MaterialIcons:size=${BAR_FONT_SIZE};2"
+
+# dmenu settings
+export DMENU_FONT="Fira SansMono-${BAR_FONT_SIZE}"
+
+# Scaling
+export CUSTOM_GLOBAL_SCALE_FACTOR=2
+export QT_AUTO_SCREEN_SCALE_FACTOR=$CUSTOM_GLOBAL_SCALE_FACTOR
+export QT_SCREEN_SCALE_FACTORS=$CUSTOM_GLOBAL_SCALE_FACTOR
+export GDK_SCALE=$CUSTOM_GLOBAL_SCALE_FACTOR
+
+# Enable firefox touch support
+export MOZ_USE_XINPUT2=1
+
+# Add /opt/bin to path
+export PATH="/opt/bin:${PATH}"

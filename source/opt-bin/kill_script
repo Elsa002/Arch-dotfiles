@@ -1,0 +1,5 @@
+#!/bin/bash
+
+SCRIPT_NAME=$1
+
+kill `ps -ef | grep -e "[/]${SCRIPT_NAME} " | awk '{print $2}'`      

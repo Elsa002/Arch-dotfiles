@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Reboot
+GenericName=reboot
+Comment=reboot
+Keywords=restart;reboot;
+Exec=reboot
+Terminal=false
+Type=Application
+Categories=Settings;

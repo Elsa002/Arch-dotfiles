@@ -1,0 +1,6 @@
+[Desktop Entry]
+Categories=Settings;Bluetooth;
+Name=Bluetooth_dmenu
+GenericName=Bluetooth Settings
+Exec=/home/raven/.local/share/dmenu_bluetooth/dmenu_bluetooth
+Type=Application

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Categories=Settings;
+Name=Heater off
+GenericName=Heater off(CPU)
+Exec=zsh -c '$HOME/.scripts/heater.sh off'
+Type=Application

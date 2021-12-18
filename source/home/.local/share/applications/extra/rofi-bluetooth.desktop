@@ -1,0 +1,6 @@
+[Desktop Entry]
+Categories=Settings;Bluetooth;
+Name=Bluetooth(rofi)
+GenericName=Bluetooth Settings
+Exec=rofi-bluetooth
+Type=Application

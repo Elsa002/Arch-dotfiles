@@ -1,0 +1,6 @@
+[Desktop Entry]
+Categories=Settings;Network;
+Name=VM-setup-init
+GenericName=VM setup init
+Exec=vm-setup init
+Type=Application

@@ -1,0 +1,6 @@
+[Desktop Entry]
+Categories=Settings;
+Name=Heater on
+GenericName=Heater on(CPU)
+Exec=zsh -c '$HOME/.scripts/heater.sh on'
+Type=Application

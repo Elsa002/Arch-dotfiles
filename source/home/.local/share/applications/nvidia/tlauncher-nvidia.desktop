@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=TLauncher(nvidia)
+Comment=TLauncher is Minecraft Launcher
+Icon=minecraft
+Exec=prime-run /usr/bin/tlauncher
+NoDisplay=false
+Categories=Application;Game;
+StartupNotify=false
+Terminal=false

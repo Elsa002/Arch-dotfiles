@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Shutdown
+GenericName=shutdown
+Comment=shutdown
+Keywords=off;
+Exec=shutdown 0
+Terminal=false
+Type=Application
+Categories=Settings;

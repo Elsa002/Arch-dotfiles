@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=WhatsApp Web
+GenericName=WhatsApp
+Comment=WhatsApp in firefox
+Keywords=WhatsApp;
+Exec=firefox https://web.whatsapp.com/
+Icon=whatsapp
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Categories=Network;

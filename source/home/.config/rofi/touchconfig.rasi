@@ -1,0 +1,19 @@
+configuration {
+	font: "Fira Sans Mono 48";
+	icon-theme: "Papirus";
+	show-icons: true;
+	terminal: "urxvt";
+	separator-style: "none";
+	hide-scrollbar: true;
+	threads: 4;
+}
+
+@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+
+element-icon {
+    size: 2.0ch;
+}
+
+scrollbar {
+    handle-width: 2ch ;
+}

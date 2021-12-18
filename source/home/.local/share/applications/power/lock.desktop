@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Lock
+GenericName=lock
+Comment=lock
+Keywords=lock;
+Exec=i3lock --color=30333c --ignore-empty-password --show-failed-attempts --pointer=default
+Terminal=false
+Type=Application
+Categories=Settings;

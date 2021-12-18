@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Name=Looking-Glass-Client(intel)
+GenericName=looking glass client
+Comment=looking-glass client for viewing virtual machines screen
+Keywords=vm;
+Exec=looking-glass-client -m 100 input:captureOnly=yes input:rawMouse=yes -k input:grabKeyboard=yes egl:vsync=no egl:multisample=yes app:renderer=egl egl:scale=1 spice:enable=yes spice:input=yes -K 10 -d input:mouseRedraw=yes egl:doubleBuffer=yes
+Terminal=false
+Type=Application
+

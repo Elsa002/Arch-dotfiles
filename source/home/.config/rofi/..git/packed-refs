@@ -1,0 +1,5 @@
+# pack-refs with: peeled fully-peeled sorted 
+92bb6ce167b5e09f00f8555295c3bc6d4e96c675 refs/remotes/origin/master
+588fe075202aaf36be514a7624ec8fc02ef902d7 refs/remotes/origin/rofi-1.5.4
+88ab21642e4c0f44fd7f2430ec05bd0e8b1465b2 refs/remotes/origin/rofi-1.6.1
+e37ed368441d86532e444e3dc3a860789976a967 refs/remotes/origin/rofi-1.7.0

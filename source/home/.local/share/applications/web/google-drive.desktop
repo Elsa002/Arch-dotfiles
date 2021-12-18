@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=Google Drive
+GenericName=drive
+Comment=Google Drive in firefox
+Keywords=google;drive;
+Exec=firefox https://drive.google.com/
+Icon=googledrive
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Categories=Network;Office;

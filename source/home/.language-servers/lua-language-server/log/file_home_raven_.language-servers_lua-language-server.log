@@ -1,0 +1,1710 @@
+[13:10:34.082][info] [#0:/home/raven/.language-servers/lua-language-server/main.lua:49]: Lua Lsp startup, root: 	/home/raven/.language-servers/lua-language-server
+[13:10:34.082][debug][#0:/home/raven/.language-servers/lua-language-server/main.lua:50]: ROOT:	/home/raven/.language-servers/lua-language-server
+[13:10:34.082][debug][#0:/home/raven/.language-servers/lua-language-server/main.lua:51]: LOGPATH:	/home/raven/.language-servers/lua-language-server/log
+[13:10:34.082][debug][#0:/home/raven/.language-servers/lua-language-server/main.lua:52]: METAPATH:	/home/raven/.language-servers/lua-language-server/meta
+[13:10:34.083][debug][#0:/home/raven/.language-servers/lua-language-server/main.lua:53]: VERSION:	2.5.0-dev
+[13:10:34.132][info] [#0:script/service/telemetry.lua:21]: Telemetry Token:	01AC8354598D0F15
+[13:10:34.137][info] [#0:script/pub/pub.lua:48]: Create brave:	1
+[13:10:34.137][info] [#0:script/pub/pub.lua:48]: Create brave:	2
+[13:10:34.137][info] [#0:script/pub/pub.lua:48]: Create brave:	3
+[13:10:34.137][info] [#0:script/pub/pub.lua:48]: Create brave:	4
+[13:10:34.137][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 1.323 MB
+        # 00 : 1.323 MB
+        # 01 : 0.000 MB
+        # 02 : 0.000 MB
+        # 03 : 0.000 MB
+        # 04 : 0.000 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:10:34.174][debug][#0:script/client.lua:344]: Client init	{
+    capabilities = {
+        callHierarchy = {
+            dynamicRegistration = false,
+        },
+        textDocument = {
+            codeAction = {
+                codeActionLiteralSupport = {
+                    codeActionKind = {
+                        valueSet = {
+                            [01] = "",
+                            [02] = "Empty",
+                            [03] = "QuickFix",
+                            [04] = "Refactor",
+                            [05] = "RefactorExtract",
+                            [06] = "RefactorInline",
+                            [07] = "RefactorRewrite",
+                            [08] = "Source",
+                            [09] = "SourceOrganizeImports",
+                            [10] = "quickfix",
+                            [11] = "refactor",
+                            [12] = "refactor.extract",
+                            [13] = "refactor.inline",
+                            [14] = "refactor.rewrite",
+                            [15] = "source",
+                            [16] = "source.organizeImports",
+                        },
+                    },
+                },
+                dynamicRegistration = false,
+            },
+            completion = {
+                completionItem = {
+                    commitCharactersSupport = false,
+                    deprecatedSupport = false,
+                    documentationFormat = {
+                        [1] = "markdown",
+                        [2] = "plaintext",
+                    },
+                    preselectSupport = false,
+                    snippetSupport = false,
+                },
+                completionItemKind = {
+                    valueSet = {
+                        [01] = 1,
+                        [02] = 2,
+                        [03] = 3,
+                        [04] = 4,
+                        [05] = 5,
+                        [06] = 6,
+                        [07] = 7,
+                        [08] = 8,
+                        [09] = 9,
+                        [10] = 10,
+                        [11] = 11,
+                        [12] = 12,
+                        [13] = 13,
+                        [14] = 14,
+                        [15] = 15,
+                        [16] = 16,
+                        [17] = 17,
+                        [18] = 18,
+                        [19] = 19,
+                        [20] = 20,
+                        [21] = 21,
+                        [22] = 22,
+                        [23] = 23,
+                        [24] = 24,
+                        [25] = 25,
+                    },
+                },
+                contextSupport = false,
+                dynamicRegistration = false,
+            },
+            declaration = {
+                linkSupport = true,
+            },
+            definition = {
+                linkSupport = true,
+            },
+            documentHighlight = {
+                dynamicRegistration = false,
+            },
+            documentSymbol = {
+                dynamicRegistration = false,
+                hierarchicalDocumentSymbolSupport = true,
+                symbolKind = {
+                    valueSet = {
+                        [01] = 1,
+                        [02] = 2,
+                        [03] = 3,
+                        [04] = 4,
+                        [05] = 5,
+                        [06] = 6,
+                        [07] = 7,
+                        [08] = 8,
+                        [09] = 9,
+                        [10] = 10,
+                        [11] = 11,
+                        [12] = 12,
+                        [13] = 13,
+                        [14] = 14,
+                        [15] = 15,
+                        [16] = 16,
+                        [17] = 17,
+                        [18] = 18,
+                        [19] = 19,
+                        [20] = 20,
+                        [21] = 21,
+                        [22] = 22,
+                        [23] = 23,
+                        [24] = 24,
+                        [25] = 25,
+                        [26] = 26,
+                    },
+                },
+            },
+            hover = {
+                contentFormat = {
+                    [1] = "markdown",
+                    [2] = "plaintext",
+                },
+                dynamicRegistration = false,
+            },
+            implementation = {
+                linkSupport = true,
+            },
+            publishDiagnostics = {
+                relatedInformation = true,
+                tagSupport = {
+                    valueSet = {
+                        [1] = 1,
+                        [2] = 2,
+                    },
+                },
+            },
+            references = {
+                dynamicRegistration = false,
+            },
+            rename = {
+                dynamicRegistration = false,
+                prepareSupport = true,
+            },
+            signatureHelp = {
+                dynamicRegistration = false,
+                signatureInformation = {
+                    documentationFormat = {
+                        [1] = "markdown",
+                        [2] = "plaintext",
+                    },
+                },
+            },
+            synchronization = {
+                didSave = true,
+                dynamicRegistration = false,
+                willSave = false,
+                willSaveWaitUntil = false,
+            },
+            typeDefinition = {
+                linkSupport = true,
+            },
+        },
+        window = {
+            showDocument = {
+                support = false,
+            },
+            showMessage = {
+                messageActionItem = {
+                    additionalPropertiesSupport = false,
+                },
+            },
+            workDoneProgress = true,
+        },
+        workspace = {
+            applyEdit = true,
+            configuration = true,
+            symbol = {
+                dynamicRegistration = false,
+                hierarchicalWorkspaceSymbolSupport = true,
+                symbolKind = {
+                    valueSet = {
+                        [01] = 1,
+                        [02] = 2,
+                        [03] = 3,
+                        [04] = 4,
+                        [05] = 5,
+                        [06] = 6,
+                        [07] = 7,
+                        [08] = 8,
+                        [09] = 9,
+                        [10] = 10,
+                        [11] = 11,
+                        [12] = 12,
+                        [13] = 13,
+                        [14] = 14,
+                        [15] = 15,
+                        [16] = 16,
+                        [17] = 17,
+                        [18] = 18,
+                        [19] = 19,
+                        [20] = 20,
+                        [21] = 21,
+                        [22] = 22,
+                        [23] = 23,
+                        [24] = 24,
+                        [25] = 25,
+                        [26] = 26,
+                    },
+                },
+            },
+            workspaceEdit = {
+                resourceOperations = {
+                    [1] = "rename",
+                    [2] = "create",
+                    [3] = "delete",
+                },
+            },
+            workspaceFolders = true,
+        },
+    },
+    clientInfo = {
+        name = "Neovim",
+        version = "0.5.1",
+    },
+    initializationOptions = {
+    },
+    processId = 22440,
+    rootPath = "/home/raven/.language-servers/lua-language-server",
+    rootUri = "file:///home/raven/.language-servers/lua-language-server",
+    trace = "off",
+    workspaceFolders = {
+        [1] = {
+            name = "/home/raven/.language-servers/lua-language-server",
+            uri = "file:///home/raven/.language-servers/lua-language-server",
+        },
+    },
+}
+[13:10:34.174][info] [#0:script/language.lua:135]: VSC language: nil
+[13:10:34.174][info] [#0:script/language.lua:136]: LS  language: en-us
+[13:10:34.174][info] [#0:script/workspace/workspace.lua:34]: Workspace inited: 	file:///home/raven/.language-servers/lua-language-server
+[13:10:34.174][info] [#0:script/workspace/workspace.lua:43]: Log path: 	/home/raven/.language-servers/lua-language-server/log/file_home_raven_.language-servers_lua-language-server.log
+[13:10:34.176][debug][#0:script/provider/provider.lua:42]: load config from luarc
+[13:10:34.176][debug][#0:script/provider/provider.lua:42]: load config from luarc
+[13:10:34.177][debug][#0:script/provider/provider.lua:48]: load config from client
+[13:10:34.178][debug][#0:script/provider/provider.lua:59]: loaded config dump:	{
+    Lua = {
+        diagnostics = {
+            globals = {
+                [1] = "vim",
+            },
+        },
+        runtime = {
+            path = {
+                [1] = "./?.lua",
+                [2] = "/usr/share/luajit-2.0.5/?.lua",
+                [3] = "/usr/local/share/lua/5.1/?.lua",
+                [4] = "/usr/local/share/lua/5.1/?/init.lua",
+                [5] = "/usr/share/lua/5.1/?.lua",
+                [6] = "/usr/share/lua/5.1/?/init.lua",
+                [7] = "lua/?.lua",
+                [8] = "lua/?/init.lua",
+            },
+            version = "LuaJIT",
+        },
+        telemetry = {
+            enable = false,
+        },
+        workspace = {
+            library = {
+                [01] = "/home/raven/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp/",
+                [02] = "/home/raven/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim/",
+                [03] = "/home/raven/.local/share/nvim/site/pack/packer/start/lspkind-nvim/",
+                [04] = "/home/raven/.local/share/nvim/site/pack/packer/start/neovim-session-manager/",
+                [05] = "/home/raven/.local/share/nvim/site/pack/packer/start/nord.nvim/",
+                [06] = "/home/raven/.local/share/nvim/site/pack/packer/start/nvim-cmp/",
+                [07] = "/home/raven/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer/",
+                [08] = "/home/raven/.local/share/nvim/site/pack/packer/start/nvim-lspconfig/",
+                [09] = "/home/raven/.local/share/nvim/site/pack/packer/start/onedark.nvim/",
+                [10] = "/home/raven/.local/share/nvim/site/pack/packer/start/packer.nvim/",
+                [11] = "/home/raven/.local/share/nvim/site/pack/packer/start/plenary.nvim/",
+                [12] = "/home/raven/.local/share/nvim/site/pack/packer/start/tagbar/",
+                [13] = "/home/raven/.local/share/nvim/site/pack/packer/start/tokyonight.nvim/",
+                [14] = "/home/raven/.local/share/nvim/site/pack/packer/start/vim-better-whitespace/",
+                [15] = "/home/raven/.local/share/nvim/site/pack/packer/start/vim-enfocado/",
+                [16] = "/home/raven/.local/share/nvim/site/pack/packer/start/vim-fugitive/",
+                [17] = "/home/raven/.local/share/nvim/site/pack/packer/start/vim-matchup/",
+                [18] = "/home/raven/.local/share/nvim/site/pack/packer/start/vim-moonfly-colors/",
+                [19] = "/home/raven/.local/share/nvim/site/pack/packer/start/vim-nightfly-guicolors/",
+                [20] = "/home/raven/.local/share/nvim/site/pack/packer/start/vim-surround/",
+                [21] = "/home/raven/.local/share/nvim/site/pack/packer/start/which-key.nvim/",
+            },
+        },
+    },
+    ["$schema"] = "https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/schema.json",
+    color = {
+        mode = "SemanticEnhanced",
+    },
+    diagnostics = {
+        disable = {
+            [1] = "close-non-object",
+        },
+        ignoredFiles = "Opened",
+        libraryFiles = "Opened",
+        neededFileStatus = {
+            ["await-in-sync"] = "Any",
+            ["discard-returns"] = "Any",
+            ["not-yieldable"] = "Any",
+            ["undefined-field"] = "Any",
+        },
+    },
+    hint = {
+        enable = true,
+    },
+    runtime = {
+        path = {
+            [1] = "script/?.lua",
+            [2] = "script/?/init.lua",
+        },
+        pathStrict = true,
+        version = "Lua 5.4",
+    },
+    workspace = {
+        ignoreDir = {
+            [1] = "locale/",
+            [2] = "libs/",
+            [3] = "3rd",
+            [4] = ".vscode",
+            [5] = "meta",
+        },
+        library = {
+            [1] = "script/meta",
+            [2] = "bin",
+        },
+        maxPreload = 1600,
+        preloadFileSize = 1000,
+    },
+}
+[13:10:34.195][info] [#0:script/plugin.lua:88]: plugin path:	nil
+[13:10:34.201][debug][#0:script/provider/provider.lua:48]: load config from client
+[13:10:34.201][debug][#0:script/provider/provider.lua:59]: loaded config dump:	{
+    Lua = {
+        diagnostics = {
+            globals = {
+                [1] = "vim",
+            },
+        },
+        runtime = {
+            path = {
+                [1] = "./?.lua",
+                [2] = "/usr/share/luajit-2.0.5/?.lua",
+                [3] = "/usr/local/share/lua/5.1/?.lua",
+                [4] = "/usr/local/share/lua/5.1/?/init.lua",
+                [5] = "/usr/share/lua/5.1/?.lua",
+                [6] = "/usr/share/lua/5.1/?/init.lua",
+                [7] = "lua/?.lua",
+                [8] = "lua/?/init.lua",
+            },
+            version = "LuaJIT",
+        },
+        telemetry = {
+            enable = false,
+        },
+        workspace = {
+            library = {
+                [01] = "/home/raven/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp/",
+                [02] = "/home/raven/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim/",
+                [03] = "/home/raven/.local/share/nvim/site/pack/packer/start/lspkind-nvim/",
+                [04] = "/home/raven/.local/share/nvim/site/pack/packer/start/neovim-session-manager/",
+                [05] = "/home/raven/.local/share/nvim/site/pack/packer/start/nord.nvim/",
+                [06] = "/home/raven/.local/share/nvim/site/pack/packer/start/nvim-cmp/",
+                [07] = "/home/raven/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer/",
+                [08] = "/home/raven/.local/share/nvim/site/pack/packer/start/nvim-lspconfig/",
+                [09] = "/home/raven/.local/share/nvim/site/pack/packer/start/onedark.nvim/",
+                [10] = "/home/raven/.local/share/nvim/site/pack/packer/start/packer.nvim/",
+                [11] = "/home/raven/.local/share/nvim/site/pack/packer/start/plenary.nvim/",
+                [12] = "/home/raven/.local/share/nvim/site/pack/packer/start/tagbar/",
+                [13] = "/home/raven/.local/share/nvim/site/pack/packer/start/tokyonight.nvim/",
+                [14] = "/home/raven/.local/share/nvim/site/pack/packer/start/vim-better-whitespace/",
+                [15] = "/home/raven/.local/share/nvim/site/pack/packer/start/vim-enfocado/",
+                [16] = "/home/raven/.local/share/nvim/site/pack/packer/start/vim-fugitive/",
+                [17] = "/home/raven/.local/share/nvim/site/pack/packer/start/vim-matchup/",
+                [18] = "/home/raven/.local/share/nvim/site/pack/packer/start/vim-moonfly-colors/",
+                [19] = "/home/raven/.local/share/nvim/site/pack/packer/start/vim-nightfly-guicolors/",
+                [20] = "/home/raven/.local/share/nvim/site/pack/packer/start/vim-surround/",
+                [21] = "/home/raven/.local/share/nvim/site/pack/packer/start/which-key.nvim/",
+            },
+        },
+    },
+    ["$schema"] = "https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/schema.json",
+    color = {
+        mode = "SemanticEnhanced",
+    },
+    diagnostics = {
+        disable = {
+            [1] = "close-non-object",
+        },
+        ignoredFiles = "Opened",
+        libraryFiles = "Opened",
+        neededFileStatus = {
+            ["await-in-sync"] = "Any",
+            ["discard-returns"] = "Any",
+            ["not-yieldable"] = "Any",
+            ["undefined-field"] = "Any",
+        },
+    },
+    hint = {
+        enable = true,
+    },
+    runtime = {
+        path = {
+            [1] = "script/?.lua",
+            [2] = "script/?/init.lua",
+        },
+        pathStrict = true,
+        version = "Lua 5.4",
+    },
+    workspace = {
+        ignoreDir = {
+            [1] = "locale/",
+            [2] = "libs/",
+            [3] = "3rd",
+            [4] = ".vscode",
+            [5] = "meta",
+        },
+        library = {
+            [1] = "script/meta",
+            [2] = "bin",
+        },
+        maxPreload = 1600,
+        preloadFileSize = 1000,
+    },
+}
+[13:10:35.173][info] [#0:script/workspace/workspace.lua:335]: Preload start.
+[13:10:35.174][info] [#0:script/workspace/workspace.lua:100]: Ignore by .gitignore:	/log
+[13:10:35.174][info] [#0:script/workspace/workspace.lua:100]: Ignore by .gitignore:	/build
+[13:10:35.174][info] [#0:script/workspace/workspace.lua:100]: Ignore by .gitignore:	/bin
+[13:10:35.174][info] [#0:script/workspace/workspace.lua:100]: Ignore by .gitignore:	!*.exe
+[13:10:35.174][info] [#0:script/workspace/workspace.lua:100]: Ignore by .gitignore:	/test/temp.lua
+[13:10:35.174][info] [#0:script/workspace/workspace.lua:100]: Ignore by .gitignore:	/meta/*
+[13:10:35.174][info] [#0:script/workspace/workspace.lua:100]: Ignore by .gitignore:	!/meta/template
+[13:10:35.174][info] [#0:script/workspace/workspace.lua:100]: Ignore by .gitignore:	!/meta/3rd
+[13:10:35.174][info] [#0:script/workspace/workspace.lua:100]: Ignore by .gitignore:	/bin2
+[13:10:35.174][info] [#0:script/workspace/workspace.lua:120]: Ignore by .gitmodules:	3rd/luamake
+[13:10:35.174][info] [#0:script/workspace/workspace.lua:120]: Ignore by .gitmodules:	3rd/bee.lua
+[13:10:35.174][info] [#0:script/workspace/workspace.lua:120]: Ignore by .gitmodules:	3rd/lpeglabel
+[13:10:35.174][info] [#0:script/workspace/workspace.lua:120]: Ignore by .gitmodules:	3rd/rcedit
+[13:10:35.174][info] [#0:script/workspace/workspace.lua:120]: Ignore by .gitmodules:	3rd/love-api
+[13:10:35.174][info] [#0:script/workspace/workspace.lua:120]: Ignore by .gitmodules:	3rd/lovr-api
+[13:10:35.174][info] [#0:script/workspace/workspace.lua:129]: Ignore by library:	/home/raven/.language-servers/lua-language-server/script/meta
+[13:10:35.174][info] [#0:script/workspace/workspace.lua:129]: Ignore by library:	/home/raven/.language-servers/lua-language-server/bin
+[13:10:35.174][info] [#0:script/workspace/workspace.lua:135]: Ignore directory:	locale/
+[13:10:35.174][info] [#0:script/workspace/workspace.lua:135]: Ignore directory:	libs/
+[13:10:35.174][info] [#0:script/workspace/workspace.lua:135]: Ignore directory:	3rd
+[13:10:35.174][info] [#0:script/workspace/workspace.lua:135]: Ignore directory:	.vscode
+[13:10:35.174][info] [#0:script/workspace/workspace.lua:135]: Ignore directory:	meta
+[13:10:35.175][debug][#0:script/workspace/workspace.lua:168]: getLibraryMatchers	/home/raven/.language-servers/lua-language-server/bin	/home/raven/.language-servers/lua-language-server/bin
+[13:10:35.175][debug][#0:script/workspace/workspace.lua:168]: getLibraryMatchers	/home/raven/.language-servers/lua-language-server/meta/LuaJIT en-us utf8	/home/raven/.language-servers/lua-language-server/meta/LuaJIT en-us utf8
+[13:10:35.175][info] [#0:script/workspace/workspace.lua:340]: Scan files at:	/home/raven/.language-servers/lua-language-server
+[13:10:35.199][info] [#0:script/workspace/workspace.lua:345]: Scan library at:	/home/raven/.language-servers/lua-language-server/bin
+[13:10:35.199][info] [#0:script/workspace/workspace.lua:345]: Scan library at:	/home/raven/.language-servers/lua-language-server/meta/LuaJIT en-us utf8
+[13:10:35.200][info] [#0:script/workspace/workspace.lua:369]: Found 230 files.
+[13:10:35.200][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/meta/LuaJIT%20en-us%20utf8/bit.lua , size = 1.316 KB
+[13:10:35.200][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/raven/.language-servers/lua-language-server/meta/LuaJIT en-us utf8
+[13:10:35.204][info] [#0:script/workspace/workspace.lua:372]: Loaded 1/230 files
+[13:10:35.204][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/meta/LuaJIT%20en-us%20utf8/basic.lua , size = 13.929 KB
+[13:10:35.204][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/raven/.language-servers/lua-language-server/meta/LuaJIT en-us utf8
+[13:10:35.213][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/meta/LuaJIT%20en-us%20utf8/builtin.lua , size = 0.223 KB
+[13:10:35.213][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/raven/.language-servers/lua-language-server/meta/LuaJIT en-us utf8
+[13:10:35.215][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/meta/LuaJIT%20en-us%20utf8/coroutine.lua , size = 2.508 KB
+[13:10:35.215][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/raven/.language-servers/lua-language-server/meta/LuaJIT en-us utf8
+[13:10:35.217][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/meta/LuaJIT%20en-us%20utf8/debug.lua , size = 7.122 KB
+[13:10:35.217][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/raven/.language-servers/lua-language-server/meta/LuaJIT en-us utf8
+[13:10:35.223][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/meta/LuaJIT%20en-us%20utf8/ffi.lua , size = 2.365 KB
+[13:10:35.223][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/raven/.language-servers/lua-language-server/meta/LuaJIT en-us utf8
+[13:10:35.228][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/meta/LuaJIT%20en-us%20utf8/io.lua , size = 6.375 KB
+[13:10:35.228][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/raven/.language-servers/lua-language-server/meta/LuaJIT en-us utf8
+[13:10:35.233][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/meta/LuaJIT%20en-us%20utf8/jit.lua , size = 0.651 KB
+[13:10:35.233][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/raven/.language-servers/lua-language-server/meta/LuaJIT en-us utf8
+[13:10:35.234][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/meta/LuaJIT%20en-us%20utf8/math.lua , size = 8.047 KB
+[13:10:35.234][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/raven/.language-servers/lua-language-server/meta/LuaJIT en-us utf8
+[13:10:35.241][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/meta/LuaJIT%20en-us%20utf8/os.lua , size = 4.244 KB
+[13:10:35.241][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/raven/.language-servers/lua-language-server/meta/LuaJIT en-us utf8
+[13:10:35.244][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/meta/LuaJIT%20en-us%20utf8/package.lua , size = 2.691 KB
+[13:10:35.245][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/raven/.language-servers/lua-language-server/meta/LuaJIT en-us utf8
+[13:10:35.248][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/meta/LuaJIT%20en-us%20utf8/string.lua , size = 6.176 KB
+[13:10:35.248][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/raven/.language-servers/lua-language-server/meta/LuaJIT en-us utf8
+[13:10:35.253][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/meta/LuaJIT%20en-us%20utf8/table.lua , size = 2.767 KB
+[13:10:35.253][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/raven/.language-servers/lua-language-server/meta/LuaJIT en-us utf8
+[13:10:35.256][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/bin/Linux/main.lua , size = 2.019 KB
+[13:10:35.256][info] [#0:script/workspace/workspace.lua:249]: ++++As library of:	/home/raven/.language-servers/lua-language-server/bin
+[13:10:35.259][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/debugger.lua , size = 1.643 KB
+[13:10:35.260][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/main.lua , size = 1.762 KB
+[13:10:35.263][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/make.lua , size = 1.337 KB
+[13:10:35.265][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/make/bootstrap.lua , size = 2.019 KB
+[13:10:35.268][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/make/copy_vcrt.lua , size = 0.112 KB
+[13:10:35.268][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/await.lua , size = 5.864 KB
+[13:10:35.273][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/brave/brave.lua , size = 1.344 KB
+[13:10:35.277][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/brave/init.lua , size = 0.071 KB
+[13:10:35.277][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/brave/log.lua , size = 1.054 KB
+[13:10:35.278][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/brave/work.lua , size = 1.605 KB
+[13:10:35.280][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/client.lua , size = 9.030 KB
+[13:10:35.287][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/config/config.lua , size = 11.427 KB
+[13:10:35.297][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/config/init.lua , size = 0.053 KB
+[13:10:35.297][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/config/loader.lua , size = 3.173 KB
+[13:10:35.300][info] [#0:script/workspace/workspace.lua:372]: Loaded 28/230 files
+[13:10:35.300][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/code-action.lua , size = 18.075 KB
+[13:10:35.312][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/command/autoRequire.lua , size = 4.013 KB
+[13:10:35.316][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/collector.lua , size = 1.549 KB
+[13:10:35.318][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/command/jsonToLua.lua , size = 1.308 KB
+[13:10:35.321][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/command/removeSpace.lua , size = 1.847 KB
+[13:10:35.325][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/command/setConfig.lua , size = 0.086 KB
+[13:10:35.325][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/command/solve.lua , size = 2.566 KB
+[13:10:35.327][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/completion/completion.lua , size = 65.348 KB
+[13:10:35.377][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/completion/init.lua , size = 0.043 KB
+[13:10:35.378][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/completion/postfix.lua , size = 9.205 KB
+[13:10:35.384][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/definition.lua , size = 4.858 KB
+[13:10:35.391][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/ambiguity-1.lua , size = 2.252 KB
+[13:10:35.396][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/await-in-sync.lua , size = 0.789 KB
+[13:10:35.397][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/circle-doc-class.lua , size = 1.856 KB
+[13:10:35.399][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/close-non-object.lua , size = 1.130 KB
+[13:10:35.399][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/code-after-break.lua , size = 0.962 KB
+[13:10:35.400][info] [#0:script/workspace/workspace.lua:372]: Loaded 44/230 files
+[13:10:35.400][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/count-down-loop.lua , size = 1.714 KB
+[13:10:35.401][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/deprecated.lua , size = 2.837 KB
+[13:10:35.403][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/different-requires.lua , size = 1.619 KB
+[13:10:35.404][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/discard-returns.lua , size = 0.764 KB
+[13:10:35.405][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/doc-field-no-class.lua , size = 0.947 KB
+[13:10:35.406][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/duplicate-doc-class.lua , size = 1.390 KB
+[13:10:35.407][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/duplicate-doc-field.lua , size = 1.149 KB
+[13:10:35.408][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/duplicate-doc-param.lua , size = 0.947 KB
+[13:10:35.409][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/duplicate-index.lua , size = 2.167 KB
+[13:10:35.410][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/duplicate-set-field.lua , size = 3.108 KB
+[13:10:35.412][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/empty-block.lua , size = 1.379 KB
+[13:10:35.413][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/global-in-nil-env.lua , size = 1.729 KB
+[13:10:35.416][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/init.lua , size = 2.184 KB
+[13:10:35.423][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/lowercase-global.lua , size = 1.438 KB
+[13:10:35.424][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/newfield-call.lua , size = 1.341 KB
+[13:10:35.425][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/newline-call.lua , size = 1.288 KB
+[13:10:35.426][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/no-implicit-any.lua , size = 0.888 KB
+[13:10:35.427][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/not-yieldable.lua , size = 1.736 KB
+[13:10:35.428][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/redefined-local.lua , size = 0.962 KB
+[13:10:35.429][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/redundant-parameter.lua , size = 2.906 KB
+[13:10:35.431][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/redundant-return.lua , size = 0.764 KB
+[13:10:35.432][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/redundant-value.lua , size = 0.695 KB
+[13:10:35.433][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/trailing-space.lua , size = 1.768 KB
+[13:10:35.434][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/type-check.lua , size = 13.898 KB
+[13:10:35.441][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/unbalanced-assignments.lua , size = 1.104 KB
+[13:10:35.442][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/undefined-doc-class.lua , size = 1.436 KB
+[13:10:35.451][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/undefined-doc-name.lua , size = 1.162 KB
+[13:10:35.452][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/undefined-doc-param.lua , size = 1.374 KB
+[13:10:35.453][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/undefined-env-child.lua , size = 0.784 KB
+[13:10:35.454][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/undefined-field.lua , size = 2.150 KB
+[13:10:35.455][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/undefined-global.lua , size = 1.515 KB
+[13:10:35.456][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/unknown-diag-code.lua , size = 0.885 KB
+[13:10:35.457][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/unused-function.lua , size = 2.424 KB
+[13:10:35.459][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/unused-label.lua , size = 0.609 KB
+[13:10:35.459][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/unused-local.lua , size = 3.020 KB
+[13:10:35.461][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/diagnostics/unused-vararg.lua , size = 0.843 KB
+[13:10:35.462][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/document-symbol.lua , size = 9.243 KB
+[13:10:35.468][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/find-source.lua , size = 0.850 KB
+[13:10:35.469][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/folding.lua , size = 5.153 KB
+[13:10:35.472][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/generic.lua , size = 8.730 KB
+[13:10:35.487][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/highlight.lua , size = 11.458 KB
+[13:10:35.493][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/hint.lua , size = 5.196 KB
+[13:10:35.497][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/hover/arg.lua , size = 2.225 KB
+[13:10:35.499][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/hover/description.lua , size = 10.952 KB
+[13:10:35.506][info] [#0:script/workspace/workspace.lua:372]: Loaded 88/230 files
+[13:10:35.507][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/hover/init.lua , size = 2.683 KB
+[13:10:35.522][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/hover/label.lua , size = 5.964 KB
+[13:10:35.526][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/hover/name.lua , size = 2.758 KB
+[13:10:35.528][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/hover/return.lua , size = 3.073 KB
+[13:10:35.531][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/hover/table.lua , size = 4.837 KB
+[13:10:35.534][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/infer.lua , size = 15.884 KB
+[13:10:35.545][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/keyword.lua , size = 9.209 KB
+[13:10:35.552][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/noder.lua , size = 52.381 KB
+[13:10:35.593][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/look-backward.lua , size = 1.900 KB
+[13:10:35.601][info] [#0:script/workspace/workspace.lua:372]: Loaded 97/230 files
+[13:10:35.603][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/matchkey.lua , size = 1.943 KB
+[13:10:35.611][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/reference.lua , size = 3.321 KB
+[13:10:35.614][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/rename.lua , size = 11.612 KB
+[13:10:35.622][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/searcher.lua , size = 34.952 KB
+[13:10:35.643][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/semantic-tokens.lua , size = 13.499 KB
+[13:10:35.665][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/signature.lua , size = 4.647 KB
+[13:10:35.669][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/substring.lua , size = 0.328 KB
+[13:10:35.670][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/type-definition.lua , size = 4.449 KB
+[13:10:35.674][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/type-formatting.lua , size = 2.556 KB
+[13:10:35.676][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/core/workspace-symbol.lua , size = 1.970 KB
+[13:10:35.677][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/doctor.lua , size = 15.499 KB
+[13:10:35.689][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/encoder/ansi.lua , size = 0.365 KB
+[13:10:35.690][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/encoder/init.lua , size = 3.096 KB
+[13:10:35.693][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/encoder/utf16.lua , size = 3.687 KB
+[13:10:35.696][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/file-uri.lua , size = 2.187 KB
+[13:10:35.699][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/files.lua , size = 18.659 KB
+[13:10:35.734][info] [#0:script/workspace/workspace.lua:372]: Loaded 113/230 files
+[13:10:35.735][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/filewatch.lua , size = 1.975 KB
+[13:10:35.737][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/fs-utility.lua , size = 14.578 KB
+[13:10:35.747][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/glob/gitignore.lua , size = 6.521 KB
+[13:10:35.753][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/glob/glob.lua , size = 3.361 KB
+[13:10:35.757][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/glob/init.lua , size = 0.083 KB
+[13:10:35.757][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/glob/matcher.lua , size = 3.479 KB
+[13:10:35.760][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/global.d.lua , size = 0.914 KB
+[13:10:35.761][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/json-beautify.lua , size = 3.097 KB
+[13:10:35.764][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/json.lua , size = 12.703 KB
+[13:10:35.773][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/jsonrpc.lua , size = 1.460 KB
+[13:10:35.776][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/language.lua , size = 3.549 KB
+[13:10:35.795][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/library.lua , size = 13.688 KB
+[13:10:35.804][info] [#0:script/workspace/workspace.lua:372]: Loaded 125/230 files
+[13:10:35.804][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/locale-loader.lua , size = 0.593 KB
+[13:10:35.805][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/parser/ast.lua , size = 53.938 KB
+[13:10:35.834][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/log.lua , size = 3.255 KB
+[13:10:35.838][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/parser/calcline.lua , size = 1.946 KB
+[13:10:35.841][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/parser/guide.lua , size = 30.071 KB
+[13:10:35.878][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/parser/compile.lua , size = 16.184 KB
+[13:10:35.889][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/parser/grammar.lua , size = 15.376 KB
+[13:10:35.893][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/parser/newparser.lua , size = 97.631 KB
+[13:10:35.977][info] [#0:script/workspace/workspace.lua:372]: Loaded 133/230 files
+[13:10:35.979][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/parser/init.lua , size = 0.396 KB
+[13:10:35.982][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/parser/lines.lua , size = 0.493 KB
+[13:10:35.984][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/parser/luadoc.lua , size = 37.939 KB
+[13:10:36.006][info] [#0:script/workspace/workspace.lua:372]: Loaded 136/230 files
+[13:10:36.008][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/parser/tokens.lua , size = 0.996 KB
+[13:10:36.011][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/parser/parse.lua , size = 1.659 KB
+[13:10:36.013][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/parser/relabel.lua , size = 9.673 KB
+[13:10:36.046][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/parser/split.lua , size = 0.185 KB
+[13:10:36.047][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/plugin.lua , size = 2.901 KB
+[13:10:36.050][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/progress.lua , size = 3.812 KB
+[13:10:36.053][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/proto/converter.lua , size = 5.065 KB
+[13:10:36.057][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/proto/define.lua , size = 7.692 KB
+[13:10:36.060][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/proto/init.lua , size = 0.051 KB
+[13:10:36.061][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/proto/proto.lua , size = 4.951 KB
+[13:10:36.065][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/provider/capability.lua , size = 3.175 KB
+[13:10:36.067][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/provider/completion.lua , size = 2.067 KB
+[13:10:36.069][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/provider/diagnostic.lua , size = 11.632 KB
+[13:10:36.077][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/provider/init.lua , size = 0.034 KB
+[13:10:36.077][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/provider/provider.lua , size = 32.139 KB
+[13:10:36.096][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/provider/markdown.lua , size = 2.740 KB
+[13:10:36.099][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/provider/semantic-tokens.lua , size = 3.654 KB
+[13:10:36.101][info] [#0:script/workspace/workspace.lua:372]: Loaded 153/230 files
+[13:10:36.102][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/pub/init.lua , size = 0.062 KB
+[13:10:36.103][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/pub/pub.lua , size = 4.062 KB
+[13:10:36.106][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/pub/report.lua , size = 0.619 KB
+[13:10:36.107][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/service/init.lua , size = 0.084 KB
+[13:10:36.107][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/service/net.lua , size = 6.193 KB
+[13:10:36.127][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/service/service.lua , size = 6.441 KB
+[13:10:36.143][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/service/telemetry.lua , size = 4.079 KB
+[13:10:36.146][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/string-merger.lua , size = 3.922 KB
+[13:10:36.149][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/text-merger.lua , size = 3.032 KB
+[13:10:36.152][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/timer.lua , size = 4.471 KB
+[13:10:36.155][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/tracy.lua , size = 0.653 KB
+[13:10:36.155][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/utility.lua , size = 17.421 KB
+[13:10:36.168][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/version.lua , size = 0.546 KB
+[13:10:36.169][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/vm/eachDef.lua , size = 0.272 KB
+[13:10:36.170][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/vm/eachRef.lua , size = 0.271 KB
+[13:10:36.171][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/vm/getDocs.lua , size = 10.496 KB
+[13:10:36.178][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/vm/getGlobals.lua , size = 1.552 KB
+[13:10:36.179][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/vm/getLibrary.lua , size = 1.084 KB
+[13:10:36.180][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/vm/getLinks.lua , size = 1.583 KB
+[13:10:36.182][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/vm/init.lua , size = 0.166 KB
+[13:10:36.182][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/vm/vm.lua , size = 2.534 KB
+[13:10:36.185][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/without-check-nil.lua , size = 2.761 KB
+[13:10:36.187][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/workspace/init.lua , size = 0.064 KB
+[13:10:36.187][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/workspace/require-path.lua , size = 3.238 KB
+[13:10:36.189][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/script/workspace/workspace.lua , size = 19.365 KB
+[13:10:36.202][info] [#0:script/workspace/workspace.lua:372]: Loaded 178/230 files
+[13:10:36.202][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test.lua , size = 2.659 KB
+[13:10:36.206][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/basic/init.lua , size = 0.048 KB
+[13:10:36.206][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/basic/noder.lua , size = 2.182 KB
+[13:10:36.208][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/basic/textmerger.lua , size = 3.395 KB
+[13:10:36.210][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/code_action/init.lua , size = 2.528 KB
+[13:10:36.221][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/catch.lua , size = 2.295 KB
+[13:10:36.247][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/command/auto-require.lua , size = 1.737 KB
+[13:10:36.248][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/command/init.lua , size = 0.030 KB
+[13:10:36.248][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/completion/common.lua , size = 45.225 KB
+[13:10:36.270][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/completion/continue.lua , size = 1.021 KB
+[13:10:36.272][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/completion/init.lua , size = 3.118 KB
+[13:10:36.275][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/crossfile/allreferences.lua , size = 3.562 KB
+[13:10:36.276][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/crossfile/completion.lua , size = 17.847 KB
+[13:10:36.287][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/crossfile/definition.lua , size = 13.887 KB
+[13:10:36.293][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/crossfile/diagnostic.lua , size = 2.848 KB
+[13:10:36.296][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/crossfile/hover.lua , size = 15.328 KB
+[13:10:36.303][info] [#0:script/workspace/workspace.lua:372]: Loaded 194/230 files
+[13:10:36.304][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/crossfile/init.lua , size = 0.180 KB
+[13:10:36.305][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/crossfile/references.lua , size = 3.547 KB
+[13:10:36.307][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/definition/arg.lua , size = 0.173 KB
+[13:10:36.308][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/definition/bug.lua , size = 2.814 KB
+[13:10:36.309][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/definition/call.lua , size = 0.090 KB
+[13:10:36.310][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/definition/init.lua , size = 1.344 KB
+[13:10:36.311][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/definition/function.lua , size = 0.247 KB
+[13:10:36.311][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/definition/local.lua , size = 1.471 KB
+[13:10:36.312][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/definition/label.lua , size = 0.236 KB
+[13:10:36.313][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/definition/luadoc.lua , size = 8.023 KB
+[13:10:36.319][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/definition/method.lua , size = 0.289 KB
+[13:10:36.323][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/definition/special.lua , size = 1.715 KB
+[13:10:36.332][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/definition/set.lua , size = 0.298 KB
+[13:10:36.335][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/definition/table.lua , size = 1.422 KB
+[13:10:36.349][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/diagnostics/init.lua , size = 16.940 KB
+[13:10:36.356][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/document_symbol/init.lua , size = 14.811 KB
+[13:10:36.364][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/full/dirty.lua , size = 0.065 KB
+[13:10:36.365][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/full/example.lua , size = 2.303 KB
+[13:10:36.367][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/full/init.lua , size = 0.851 KB
+[13:10:36.369][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/full/normal.lua , size = 1.245 KB
+[13:10:36.370][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/full/projects.lua , size = 1.356 KB
+[13:10:36.371][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/full/self.lua , size = 0.858 KB
+[13:10:36.372][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/highlight/init.lua , size = 1.889 KB
+[13:10:36.373][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/hover/init.lua , size = 20.038 KB
+[13:10:36.380][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/other/init.lua , size = 0.402 KB
+[13:10:36.381][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/references/all.lua , size = 2.402 KB
+[13:10:36.382][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/references/common.lua , size = 2.443 KB
+[13:10:36.384][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/references/init.lua , size = 1.051 KB
+[13:10:36.386][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/rename/init.lua , size = 3.099 KB
+[13:10:36.388][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/signature/init.lua , size = 3.052 KB
+[13:10:36.390][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/type_formatting/init.lua , size = 2.079 KB
+[13:10:36.391][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/test/type_inference/init.lua , size = 13.636 KB
+[13:10:36.397][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/tools/Lua51.lua , size = 10.699 KB
+[13:10:36.408][info] [#0:script/workspace/workspace.lua:372]: Loaded 227/230 files
+[13:10:36.409][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/tools/build-3rd-meta.lua , size = 0.113 KB
+[13:10:36.409][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/tools/love-api.lua , size = 6.428 KB
+[13:10:36.415][info] [#0:script/workspace/workspace.lua:247]: Preload file at: file:///home/raven/.language-servers/lua-language-server/tools/lovr-api.lua , size = 6.548 KB
+[13:10:37.174][info] [#0:script/workspace/workspace.lua:372]: Loaded 230/230 files
+[13:10:37.174][info] [#0:script/workspace/workspace.lua:381]: Preload finish.
+[13:10:37.174][debug][#0:script/provider/provider.lua:213]: didOpen	file:///home/raven/.language-servers/lua-language-server/meta/LuaJIT%20en-us%20utf8/package.lua
+[13:10:38.177][debug][#0:script/proto/proto.lua:157]: Method [textDocument/didOpen] takes [1.303]sec.
+[13:10:38.261][debug][#0:script/provider/diagnostic.lua:253]: publishDiagnostics	file:///home/raven/.language-servers/lua-language-server/script/await.lua	1
+[13:10:38.353][debug][#0:script/provider/diagnostic.lua:253]: publishDiagnostics	file:///home/raven/.language-servers/lua-language-server/script/config/config.lua	48
+[13:10:39.369][debug][#0:script/provider/diagnostic.lua:253]: publishDiagnostics	file:///home/raven/.language-servers/lua-language-server/script/core/document-symbol.lua	1
+[13:10:39.371][debug][#0:script/provider/diagnostic.lua:253]: publishDiagnostics	file:///home/raven/.language-servers/lua-language-server/script/core/find-source.lua	1
+[13:10:40.369][warn] [#0:script/core/diagnostics/init.lua:60]: Diagnostics [not-yieldable] @ [file:///home/raven/.language-servers/lua-language-server/script/core/noder.lua] takes [0.537] sec!
+[13:10:41.630][debug][#0:script/provider/diagnostic.lua:253]: publishDiagnostics	file:///home/raven/.language-servers/lua-language-server/script/encoder/init.lua	6
+[13:10:41.636][debug][#0:script/provider/diagnostic.lua:253]: publishDiagnostics	file:///home/raven/.language-servers/lua-language-server/script/encoder/utf16.lua	8
+[13:10:41.771][debug][#0:script/provider/diagnostic.lua:253]: publishDiagnostics	file:///home/raven/.language-servers/lua-language-server/script/files.lua	1
+[13:10:41.778][debug][#0:script/provider/diagnostic.lua:253]: publishDiagnostics	file:///home/raven/.language-servers/lua-language-server/script/filewatch.lua	2
+[13:10:41.900][debug][#0:script/provider/diagnostic.lua:253]: publishDiagnostics	file:///home/raven/.language-servers/lua-language-server/script/json.lua	1
+[13:10:42.121][debug][#0:script/provider/diagnostic.lua:253]: publishDiagnostics	file:///home/raven/.language-servers/lua-language-server/script/parser/ast.lua	2
+[13:10:42.125][debug][#0:script/provider/diagnostic.lua:253]: publishDiagnostics	file:///home/raven/.language-servers/lua-language-server/script/parser/calcline.lua	1
+[13:10:42.203][debug][#0:script/provider/diagnostic.lua:253]: publishDiagnostics	file:///home/raven/.language-servers/lua-language-server/script/parser/guide.lua	2
+[13:10:42.369][debug][#0:script/provider/diagnostic.lua:253]: publishDiagnostics	file:///home/raven/.language-servers/lua-language-server/script/parser/luadoc.lua	2
+[13:10:42.450][debug][#0:script/provider/diagnostic.lua:253]: publishDiagnostics	file:///home/raven/.language-servers/lua-language-server/script/parser/newparser.lua	2
+[13:10:42.502][debug][#0:script/provider/diagnostic.lua:253]: publishDiagnostics	file:///home/raven/.language-servers/lua-language-server/script/proto/define.lua	10
+[13:10:42.517][debug][#0:script/provider/diagnostic.lua:253]: publishDiagnostics	file:///home/raven/.language-servers/lua-language-server/script/proto/proto.lua	1
+[13:10:42.587][debug][#0:script/provider/diagnostic.lua:253]: publishDiagnostics	file:///home/raven/.language-servers/lua-language-server/script/provider/diagnostic.lua	3
+[13:10:42.872][debug][#0:script/provider/diagnostic.lua:253]: publishDiagnostics	file:///home/raven/.language-servers/lua-language-server/script/provider/provider.lua	15
+[13:10:42.949][debug][#0:script/provider/diagnostic.lua:253]: publishDiagnostics	file:///home/raven/.language-servers/lua-language-server/script/service/telemetry.lua	1
+[13:10:43.032][debug][#0:script/provider/diagnostic.lua:253]: publishDiagnostics	file:///home/raven/.language-servers/lua-language-server/script/string-merger.lua	1
+[13:10:43.090][debug][#0:script/provider/diagnostic.lua:253]: publishDiagnostics	file:///home/raven/.language-servers/lua-language-server/script/utility.lua	3
+[13:10:43.274][debug][#0:script/provider/diagnostic.lua:253]: publishDiagnostics	file:///home/raven/.language-servers/lua-language-server/script/workspace/workspace.lua	2
+[13:10:44.534][debug][#0:script/provider/diagnostic.lua:253]: publishDiagnostics	file:///home/raven/.language-servers/lua-language-server/test/crossfile/definition.lua	1
+[13:10:44.818][debug][#0:script/provider/diagnostic.lua:253]: publishDiagnostics	file:///home/raven/.language-servers/lua-language-server/test/crossfile/hover.lua	2
+[13:10:44.869][debug][#0:script/provider/diagnostic.lua:253]: publishDiagnostics	file:///home/raven/.language-servers/lua-language-server/test/crossfile/references.lua	1
+[13:10:45.151][debug][#0:script/provider/diagnostic.lua:253]: publishDiagnostics	file:///home/raven/.language-servers/lua-language-server/test/highlight/init.lua	1
+[13:10:45.770][debug][#0:script/provider/diagnostic.lua:371]: 全文诊断耗时：	7.590119
+[13:11:17.164][debug][#0:script/provider/provider.lua:223]: didClose	file:///home/raven/.language-servers/lua-language-server/meta/LuaJIT%20en-us%20utf8/package.lua
+[13:11:17.164][debug][#0:script/provider/diagnostic.lua:140]: clearDiagnostics	file:///home/raven/.language-servers/lua-language-server/meta/LuaJIT%20en-us%20utf8/package.lua
+[13:11:34.193][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 120.067 MB
+        # 00 : 114.358 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     10
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      10
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:12:34.215][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 120.450 MB
+        # 00 : 114.742 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     10
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      10
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:13:34.234][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 120.832 MB
+        # 00 : 115.123 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     10
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      10
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:14:34.252][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 121.214 MB
+        # 00 : 115.506 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     10
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      10
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:15:34.270][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 121.596 MB
+        # 00 : 115.887 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     10
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      10
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:16:34.295][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 121.977 MB
+        # 00 : 116.268 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     10
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      10
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:17:34.316][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 122.360 MB
+        # 00 : 116.651 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     10
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      10
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:18:34.338][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 122.741 MB
+        # 00 : 117.032 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     10
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      10
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:19:34.360][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 123.122 MB
+        # 00 : 117.414 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     10
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      10
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:20:34.379][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 103.907 MB
+        # 00 : 98.198 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:21:34.391][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 104.290 MB
+        # 00 : 98.581 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:22:34.407][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 104.670 MB
+        # 00 : 98.962 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:23:34.426][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 105.051 MB
+        # 00 : 99.343 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:24:34.444][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 105.434 MB
+        # 00 : 99.725 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:25:34.462][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 105.815 MB
+        # 00 : 100.106 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:26:34.483][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 106.196 MB
+        # 00 : 100.487 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:27:34.507][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 106.579 MB
+        # 00 : 100.870 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:28:34.521][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 106.960 MB
+        # 00 : 101.251 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:29:34.534][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 107.343 MB
+        # 00 : 101.634 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:30:34.553][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 107.724 MB
+        # 00 : 102.015 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:31:34.573][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 108.105 MB
+        # 00 : 102.397 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:32:34.595][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 108.488 MB
+        # 00 : 102.779 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:33:34.621][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 108.869 MB
+        # 00 : 103.160 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:34:34.643][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 109.252 MB
+        # 00 : 103.543 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:35:34.663][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 109.633 MB
+        # 00 : 103.924 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:36:34.682][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 110.014 MB
+        # 00 : 104.306 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:37:34.705][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 110.397 MB
+        # 00 : 104.688 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:38:34.729][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 110.778 MB
+        # 00 : 105.070 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:39:34.757][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 111.159 MB
+        # 00 : 105.451 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:40:34.778][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 111.542 MB
+        # 00 : 105.834 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:41:34.798][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 111.923 MB
+        # 00 : 106.215 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:42:34.815][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 112.306 MB
+        # 00 : 106.597 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:43:34.839][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 112.687 MB
+        # 00 : 106.979 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:44:34.857][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 113.068 MB
+        # 00 : 107.360 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:45:34.876][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 113.451 MB
+        # 00 : 107.743 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:46:34.893][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 113.832 MB
+        # 00 : 108.124 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:47:34.916][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 114.215 MB
+        # 00 : 108.507 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:48:34.938][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 114.596 MB
+        # 00 : 108.888 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:49:34.961][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 114.977 MB
+        # 00 : 109.269 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:50:34.987][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 115.360 MB
+        # 00 : 109.652 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:51:35.001][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 115.741 MB
+        # 00 : 110.033 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:52:35.008][debug][#0:script/service/service.lua:138]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 116.123 MB
+        # 00 : 110.414 MB
+        # 01 : 1.354 MB
+        # 02 : 1.382 MB
+        # 03 : 1.354 MB
+        # 04 : 1.617 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    --------------- Proto ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[13:53:29.208][info] [#0:script/provider/provider.lua:136]: Server shutdown.
+[13:53:29.210][info] [#0:script/provider/provider.lua:129]: Server exited.

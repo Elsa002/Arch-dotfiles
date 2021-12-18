@@ -1,0 +1,6 @@
+[Desktop Entry]
+Categories=Settings;Network;
+Name=VM-setup-stop
+GenericName=VM setup stop
+Exec=vm-setup stop
+Type=Application
