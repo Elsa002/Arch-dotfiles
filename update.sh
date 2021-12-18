@@ -50,7 +50,7 @@ print_done "Copy zsh files."
 # Copy general settings files
 print_seperator "Copy general settings files"
 verbose_run mkdir -p source/home
-for i in {.global_settings,.kde4,.fonts,.xinitrc,.wallpapers,.scripts}
+for i in {.Xresources,.global_settings,.kde4,.fonts,.xinitrc,.wallpapers,.scripts}
 do
     verbose_run cp -r $HOME/$i source/home
 done

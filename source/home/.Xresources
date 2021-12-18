@@ -1,0 +1,123 @@
+!Font size and border size, make border size same as GAP_SIZE
+#define font_size 32
+#define border_size 16
+
+#define fonts \
+xft:monospace:size=font_size:style=Regular:antialias=true,\
+xft:Dejavu Sans Mono:pixelsize=font_size:style=Regular:antialias=true,\
+xft:MaterialIcons:size=font_size:style=Regular:antialias=true,\
+xft:fontawesome-regular:size=font_size:style=Regular:antialias=true
+
+#define fonts_bold \
+xft:monospace:size=font_size:style=Bold:antialias=true,\
+xft:Dejavu Sans Mono:pixelsize=font_size:style=Bold:antialias=true,\
+xft:MaterialIcons:pixlesize=font_size:style=Bold:antialias=true,\
+xft:fontawesome-regular:size=font_size:style=Bold:antialias=true
+
+
+URxvt.perl-ext-common: default,matcher,resize-font
+
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+!Key fix
+URxvt.keysym.Control-Up: \033[1;5A
+URxvt.keysym.Control-Down: \033[1;5B
+URxvt.keysym.Control-Left: \033[1;5D
+URxvt.keysym.Control-Right: \033[1;5C
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
+!Font
+URxvt.font: fonts
+URxvt.boldFont: fonts_bold
+URxvt.letterSpace: -0.5
+
+!Internal border
+URxvt*internalBorder: border_size
+
+!Some other stuff
+URxvt.scrollBar: false
+URxvt.scrollTtyOutput: false
+URxvt.scrollWithBuffer: true
+URcvt.scrollTtyKeypress: true
+
+!Colorsd
+URxvt.background: rgba:2000/2000/2000/e900
+URxvt.foreground: #ffffff
+URxvt.cursorColor: #ffffff
+URxvt.depth: 32
+
+!Black
+URxvt.color0: #151515
+URxvt.color8: #505050
+!Red
+URxvt.color1: #bc4142
+URxvt.color9: #cc6667
+!Green
+URxvt.color2: #69b840
+URxvt.color10: #71c863
+!Yellow
+URxvt.color3: #f5d85d
+Urxvt.color11: #f5ed90
+!Blue
+URxvt.color4: #4597c5
+URxvt.color12: #6a9fc5
+!Magenta
+URxvt.color5: #cb52c8
+URxvt.color13: #da75cf
+!Cyan
+URxvt.color6: #45b5b0
+URxvt.color14: #75c5ca
+!White
+URxvt.color7: #b9b9b9
+URxvt.color15: #f5f5f5
+
+!###############################################################################
+
+!Font
+UXTerm.vt100.font: xft:monospace:size=font_size:style=Regular:antialias=true,xft:Dejavu Sans Mono:pixelsize=font_size,xft:MaterialIcons:size=font_size,xft:fontawesome-regular:size=font_size
+UXTerm.vt100.boldFont: xft:monospace:size=font_size:style=Bold:antialias=true
+UXTerm.vt100.letterSpace: -0.5
+
+!Internal border
+UXTerm*internalBorder: border_size
+
+!Some other stuff
+UXTerm.vt100.scrollBar: false
+UXTerm.vt100.scrollTtyOutput: false
+UXTerm.vt100.scrollWithBuffer: true
+
+!Colorsd
+UXTerm.vt100.background: #202020
+UXTerm.vt100.foreground: #ffffff
+UXTerm.vt100.cursorColor: #ffffff
+UXTerm.vt100.depth: 24
+
+!Black
+UXTerm.vt100.color0: #151515
+UXTerm.vt100.color8: #505050
+!Red
+UXTerm.vt100.color1: #bc4142
+UXTerm.vt100.color9: #cc6667
+!Green
+UXTerm.vt100.color2: #69b840
+UXTerm.vt100.color10: #71c863
+!Yellow
+UXTerm.vt100.color3: #f5d85d
+UXTerm.vt100.color11: #f5ed90
+!Blue
+UXTerm.vt100.color4: #4597c5
+UXTerm.vt100.color12: #6a9fc5
+!Magenta
+UXTerm.vt100.color5: #cb52c8
+UXTerm.vt100.color13: #da75cf
+!Cyan
+UXTerm.vt100.color6: #45b5b0
+UXTerm.vt100.color14: #75c5ca
+!White
+UXTerm.vt100.color7: #b9b9b9
+UXTerm.vt100.color15: #f5f5f5
