@@ -15,6 +15,13 @@ export SETTINGS_LAUNCHERS_FONT_SIZE=24
 export SETTINGS_BAR_FONT_SIZE=16
 export SETTINGS_TERMINAL_FONT_SIZE=16
 
+# NOTE: top bars: top, top-minimal, small-top
+# NOTE: bottom bars: bottom, bottom-minimal, small-bottom
+export MAIN_TOP_BAR="top"
+export MAIN_BOTTOM_BAR="bottom"
+export VERTICAL_TOP_BAR="small-top"
+export VERTICALMAIN_BOTTOM_BAR="small-bottom"
+
 ## Constants #################################################################
 i3_conf_file="$HOME/.config/i3/config"
 rofi_conf_file="$HOME/.config/rofi/config.rasi"
