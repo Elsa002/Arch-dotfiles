@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Unity Hub (terminal)
+Exec=kitty unity -d
+Terminal=false
+Type=Application
+Icon=unityhub
+StartupWMClass=Unity Hub
+Version=2.4.5
+Comment=The Official Unity Hub with nvidia
+MimeType=x-scheme-handler/unityhub;
+Categories=Development;

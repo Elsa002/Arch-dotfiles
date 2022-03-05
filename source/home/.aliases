@@ -2,6 +2,7 @@
 
 ## Enable aliases on sudo
 alias sudo='sudo '
+alias __='sudo -E '
 
 ## Vim like keys ##########################################
 alias :q='exit'
@@ -25,3 +26,4 @@ alias luamake='$HOME/.language-servers/lua-language-server/3rd/luamake/luamake'
 
 ## Pacman
 alias pacman='pacman --color=always'
+alias yay='yay --color=always'

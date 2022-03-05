@@ -1,6 +1,0 @@
-# pack-refs with: peeled fully-peeled sorted 
-08181a151ede4565aae0991ab0e81aafac58887d refs/remotes/origin/main
-76cda4aba48a9444b935649bcc9e4a9feb5db8fc refs/remotes/origin/megarefactoring
-66a6d0eca552a0ec43eb0bbe24c23d2413eba8d8 refs/tags/0.0.1
-f590f7a69c6de2f14eb0372698338a1cb5cc9cca refs/tags/0.5.0-rc1
-76cda4aba48a9444b935649bcc9e4a9feb5db8fc refs/tags/0.5.0-rc2

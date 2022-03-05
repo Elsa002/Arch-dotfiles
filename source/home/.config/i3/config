@@ -1,24 +1,27 @@
-# Start polkit agent
+# Startup
 exec --no-startup-id /usr/bin/lxpolkit &
-
-# Start bluetooth on first start
 exec bluetoothctl power on
 exec --no-startup-id onboard &
+exec_always --no-startup-id nm-applet &
 exec --no-startup-id ~/.config/i3/scripts/start_auto_rotate.sh
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always picom --config ~/.config/picom/config
 exec_always feh --no-fehbg --bg-fill ~/.wallpapers/wallpaper
+exec_always sh -c 'pkill dunst; dunst' &
 
 # setup keyboardd layouts
 exec_always setxkbmap -layout us,il -option grp:alt_shift_toggle
 
-# Some Variables for sizes, modify to match the screen resolution and size
-set $GAP_SIZE 8
-set $FONT_SIZE 48
-
-
 # Use windows key as mod
 set $mod Mod4
+
+# Settings based on screen resolution and size
+set $FONT_SIZE 32
+set $GAP_SIZE 8
+set $CONTROL_WINDOW_SIZE_X 1400
+set $CONTROL_WINDOW_SIZE_Y 1050
+set $CONTROL_WINDOW_POS_X 2432
+set $CONTROL_WINDOW_POS_Y -148
 
 # Default gaps
 gaps inner $GAP_SIZE
@@ -57,8 +60,8 @@ bindsym Control+XF86MonBrightnessDown exec xbacklight -dec 1
 #bindsym Shift+XF86AudioMute exec pactl -- set-sink-volume 0 0%
 #bindsym XF86AudioMute exec amixer set Master toggle
 
-bindsym XF86AudioRaiseVolume exec amixer sset Master 5%+
-bindsym XF86AudioLowerVolume exec amixer sset Master 5%-
+bindsym XF86AudioRaiseVolume exec amixer sset Master 3%+
+bindsym XF86AudioLowerVolume exec amixer sset Master 3%-
 bindsym Shift+XF86AudioRaiseVolume exec amixer sset Master 1%+
 bindsym Shift+XF86AudioLowerVolume exec amixer sset Master 1%-
 bindsym Shift+XF86AudioMute exec amixer sset Master 0%
@@ -129,6 +132,13 @@ for_window [instance="float"] floating enable
 for_window [class="Spotify"] move to workspace $ws10
 for_window [class="Popcorn-Time"] floating disable
 for_window [class="Rofi"] floating enable
+for_window [class="control-window|Blueman-manager"] floating enable, \
+                        resize set \
+                            $CONTROL_WINDOW_SIZE_X \
+                            $CONTROL_WINDOW_SIZE_Y, \
+                        move position \
+                            $CONTROL_WINDOW_POS_X \
+                            $CONTROL_WINDOW_POS_Y
 
 # Workspace names
 set $ws1 "1"

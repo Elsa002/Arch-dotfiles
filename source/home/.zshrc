@@ -1,10 +1,16 @@
 # Add to path
-PATH="/opt/bin:$PATH"
+if [ -z "`echo ${PATH} | grep '/opt/bin'`" ]; then
+    export PATH="/opt/bin:${PATH}"
+fi
 WINEPREFIX=/home/raven/Games/games_wine_prefix
 
+#source "$HOME/.global_settings"
 source "$HOME/.dotfiles/installer/installer-tools.sh"
 source "$HOME/.dotfiles/installer/package-manager-tools.sh"
 source "$HOME/.aliases"
+if [ -f "$HOME/.user-shell-rc.sh" ]; then
+    source "$HOME/.user-shell-rc.sh"
+fi
 
 # Start x server on tty1
 if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then

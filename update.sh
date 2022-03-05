@@ -9,30 +9,30 @@ source "$SCRIPT_DIR/installer/installer-tools.sh"
 verbose_run cd "$SCRIPT_DIR"
 SCRIPT_DIR=`pwd`
 
-if yes_no_prompt 'Update nvim installer'; then
-    $HOME/.config/nvim/installer/update_installer.sh
-    print_done "Updating nvim installer."
-else
-    print_info 'Skipping nvim update'
-fi
+# if yes_no_prompt 'Update nvim installer'; then
+#     $HOME/.config/nvim/installer/update_installer.sh
+#     print_done "Updating nvim installer."
+# else
+#     print_info 'Skipping nvim update'
+# fi
 
 print_seperator "Removing old source files"
 verbose_run rm -rf source/home
 print_done "Removing old source files."
 
 # Copy config files
-print_seperator "Copy LSP files"
-verbose_run mkdir -p source/home/.language-servers
-for i in {arduino-language-server,lua-language-server}
-do
-    verbose_run cp -r $HOME/.language-servers/$i source/home/.language-servers
-done
-print_done "Copy LSP files."
+# print_seperator "Copy LSP files"
+# verbose_run mkdir -p source/home/.language-servers
+# for i in {arduino-language-server,lua-language-server}
+# do
+#     verbose_run cp -r $HOME/.language-servers/$i source/home/.language-servers
+# done
+# print_done "Copy LSP files."
 
 # Copy config files
 print_seperator "Copy config files"
 verbose_run mkdir -p source/home/.config
-for i in {i3,kitty,nvim,picom,polybar,rofi,qt5ct,xournalpp,kdeglobals}
+for i in {i3,kitty,picom,polybar,rofi,qt5ct,kdeglobals}
 do
     verbose_run cp -r $HOME/.config/$i source/home/.config
 done

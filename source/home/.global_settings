@@ -1,26 +1,147 @@
-# Themes
-#export GTK_THEME=Adwaita:dark
-export GTK_THEME=Breeze-Dark
-export QT_QPA_PLATFORMTHEME=qt5ct
+#!/bin/sh
 
-# Bar settings
-export TOP_BAR_HEIGHT=96
-export BAR_FONT_SIZE=32
-export BAR_FONT_0="DejavuSansMono:size=${BAR_FONT_SIZE};2"
-export BAR_FONT_1="fontawesome-regular:size=${BAR_FONT_SIZE};2"
-export BAR_FONT_2="MaterialIcons:size=${BAR_FONT_SIZE};2"
+## Includes ##################################################################
+source $HOME/.dotfiles/installer/installer-tools.sh
 
-# dmenu settings
-export DMENU_FONT="Fira SansMono-${BAR_FONT_SIZE}"
+## Settings ##################################################################
+# NOTE: The scaling affects all sizes, including fonts.
+export SETTINGS_SCALING="2/1"
+export SETTINGS_DPI=96
+export SETTINGS_GAP_SIZE=4
+export SETTINGS_CONTROL_WINDOW_SIZE_X=700
+export SETTINGS_CONTROL_WINDOW_SIZE_Y=525
+export SETTINGS_FONT_NAME="DejavuSansMono"
+export SETTINGS_LAUNCHERS_FONT_SIZE=24
+export SETTINGS_BAR_FONT_SIZE=16
+export SETTINGS_TERMINAL_FONT_SIZE=16
 
-# Scaling
-export CUSTOM_GLOBAL_SCALE_FACTOR=2
-export QT_AUTO_SCREEN_SCALE_FACTOR=$CUSTOM_GLOBAL_SCALE_FACTOR
-export QT_SCREEN_SCALE_FACTORS=$CUSTOM_GLOBAL_SCALE_FACTOR
-export GDK_SCALE=$CUSTOM_GLOBAL_SCALE_FACTOR
+## Constants #################################################################
+i3_conf_file="$HOME/.config/i3/config"
+rofi_conf_file="$HOME/.config/rofi/config.rasi"
+kitty_conf_file="$HOME/.config/kitty/kitty.conf"
 
-# Enable firefox touch support
-export MOZ_USE_XINPUT2=1
+## Functions #################################################################
+function apply_theme()
+{
+    export GTK_THEME=Breeze-Dark  # Breeze-Dark Adwaita:dark
+    export QT_QPA_PLATFORMTHEME=qt5ct
+}
 
-# Add /opt/bin to path
-export PATH="/opt/bin:${PATH}"
+function apply_dpi_and_scaling()
+{
+    xrandr --dpi ${SETTINGS_DPI}
+    export CUSTOM_GLOBAL_SCALE_FACTOR=$(($SETTINGS_SCALING))
+    export QT_AUTO_SCREEN_SCALE_FACTOR=$(($SETTINGS_SCALING))
+    export QT_SCREEN_SCALE_FACTORS=$(($SETTINGS_SCALING))
+    export GDK_SCALE=$(($SETTINGS_SCALING))
+}
+
+function get_screen_info()
+{
+    if [ -z "$DISPLAY" ]; then
+        return
+    fi
+    export SCREEN_DIMENTIONS_REGEX='^[^0-9]*([0-9]+x[0-9]+) [^0-9]*([0-9]+x[0-9]+).*$'  # \1 - resolution, \2 - dimentions
+    export DEFAULT_SCREEN_NUMBER=`xdpyinfo| grep "default screen number" | sed -r 's/^[a-z ]*: *([0-9]+)$/\1/'`
+    export SCREEN_DATA=`xdpyinfo | grep -A 2 "screen #${DEFAULT_SCREEN_NUMBER}:"`
+    export SCREEN_RESOLUTION=`echo "${SCREEN_DATA}" | grep dimensions | sed -r "s/${SCREEN_DIMENTIONS_REGEX}/\1/" | head -n 1`
+    export SCREEN_RESOLUTION_X=`echo "${SCREEN_RESOLUTION}" | sed -r 's/([0-9]+)x([0-9]+)/\1/'`
+    export SCREEN_RESOLUTION_Y=`echo "${SCREEN_RESOLUTION}" | sed -r 's/([0-9]+)x([0-9]+)/\2/'`
+    export SCREEN_DIMENTIONS=`echo "${SCREEN_DATA}" | grep dimensions | sed -r "s/${SCREEN_DIMENTIONS_REGEX}/\2/" | head -n 1`
+    export SCREEN_DIMENTIONS_X=`echo "${SCREEN_DIMENTIONS}" | sed -r 's/([0-9]+)x([0-9]+)/\1/'`
+    export SCREEN_DIMENTIONS_Y=`echo "${SCREEN_DIMENTIONS}" | sed -r 's/([0-9]+)x([0-9]+)/\2/'`
+}
+
+function apply_terminal_settings()
+{
+    export TERMINAL_FONT_SIZE=$(($SETTINGS_TERMINAL_FONT_SIZE * $SETTINGS_SCALING))
+    sed -i 's/^font_size .*$/font_size '"$TERMINAL_FONT_SIZE"'/' $kitty_conf_file
+}
+
+function apply_i3_settings()
+{
+    export GAP_SIZE=$(($SETTINGS_GAP_SIZE * $SETTINGS_SCALING))
+    export FONT_SIZE=$(($SETTINGS_BAR_FONT_SIZE * $SETTINGS_SCALING))
+    sed -i 's/^set $GAP_SIZE .*/set $GAP_SIZE '"$GAP_SIZE"'/' $i3_conf_file
+    sed -i 's/^set $FONT_SIZE .*/set $FONT_SIZE '"$FONT_SIZE"'/' $i3_conf_file
+}
+
+function apply_bar_settings()
+{
+    export BAR_FONT_SIZE=$(($SETTINGS_BAR_FONT_SIZE * $SETTINGS_SCALING))
+    export TOP_BAR_HEIGHT=$((3 * BAR_FONT_SIZE))
+    export BAR_FONT_0="${SETTINGS_FONT_NAME}:size=${BAR_FONT_SIZE};2"
+    export BAR_FONT_1="fontawesome-regular:size=${BAR_FONT_SIZE};2"
+    export BAR_FONT_2="MaterialIcons:size=${BAR_FONT_SIZE};2"
+}
+
+function apply_control_windows_settings()
+{
+    # Check parameters
+    if [ -z "$TOP_BAR_HEIGHT" ] || [ -z "$GAP_SIZE" ]; then
+        print_error "TOP_BAR_HEIGHT and/or GAP_SIZE are not set yet, can't apply control windows settings."
+        return 1
+    fi
+
+    sh -c 'echo $((SCREEN_RESOLUTION_X * SCREEN_RESOLUTION_Y)) >/dev/null' || {
+        print_error "Invalid screen resolution detected: '$SCREEN_RESOLUTION_X'x'$SCREEN_RESOLUTION_Y', can't apply control windows settings."
+        return 1
+    }
+
+    # Calculate Sizes
+    export CONTROL_WINDOW_SIZE_X=$(($SETTINGS_CONTROL_WINDOW_SIZE_X * $SETTINGS_SCALING))
+    export CONTROL_WINDOW_SIZE_Y=$(($SETTINGS_CONTROL_WINDOW_SIZE_Y * $SETTINGS_SCALING))
+    export CONTROL_WINDOW_POS_X=$((SCREEN_RESOLUTION_X - CONTROL_WINDOW_SIZE_X - GAP_SIZE))
+    export CONTROL_WINDOW_POS_Y=$((SCREEN_RESOLUTION_Y - CONTROL_WINDOW_SIZE_Y - GAP_SIZE - TOP_BAR_HEIGHT))
+
+    # Apply sizes in i3 config file
+    sed -i 's/^set $CONTROL_WINDOW_SIZE_X [0-9]*$/set $CONTROL_WINDOW_SIZE_X '"$CONTROL_WINDOW_SIZE_X"'/' $i3_conf_file
+    sed -i 's/^set $CONTROL_WINDOW_SIZE_Y [0-9]*$/set $CONTROL_WINDOW_SIZE_Y '"$CONTROL_WINDOW_SIZE_Y"'/' $i3_conf_file
+    sed -i 's/^set $CONTROL_WINDOW_POS_X [0-9]*$/set $CONTROL_WINDOW_POS_X '"$CONTROL_WINDOW_POS_X"'/' $i3_conf_file
+    sed -i 's/^set $CONTROL_WINDOW_POS_Y [0-9]*$/set $CONTROL_WINDOW_POS_Y '"$CONTROL_WINDOW_POS_Y"'/' $i3_conf_file
+}
+
+function apply_launchers_settings()
+{
+    # Calculate Font size
+    export LAUNCHERS_FONT_SIZE=$(($SETTINGS_LAUNCHERS_FONT_SIZE * $SETTINGS_SCALING))
+    export DMENU_FONT_SIZE=$(($SETTINGS_LAUNCHERS_FONT_SIZE * $SETTINGS_SCALING * 3 / 4))
+
+    # Apply Fonts
+    export DMENU_FONT="$SETTINGS_FONT_NAME-${DMENU_FONT_SIZE}"
+
+    # Apply font in rofi
+    sed -i 's/^\([ \t]*font: "[a-zA-Z ]\+\)[0-9]\+";$/\1'"$LAUNCHERS_FONT_SIZE"'";/' $rofi_conf_file
+}
+
+function apply_touch_support()
+{
+    # Enable firefox touch support
+    export MOZ_USE_XINPUT2=1
+}
+
+function modify_env_variables()
+{
+    # Add /opt/bin to path if not there
+    if [ -z "`echo ${PATH} | grep '/opt/bin'`" ]; then
+        export PATH="/opt/bin:${PATH}"
+    fi
+}
+
+function apply_all_theme_settings()
+{
+    apply_theme
+    apply_dpi_and_scaling
+    apply_terminal_settings
+    apply_bar_settings
+    apply_i3_settings
+    apply_launchers_settings
+    apply_control_windows_settings
+}
+
+## Main Logic ################################################################
+get_screen_info
+apply_all_theme_settings
+apply_touch_support
+modify_env_variables
+
